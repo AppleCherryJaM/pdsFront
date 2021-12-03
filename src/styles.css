@@ -1,4 +1,6 @@
-body {
-  font-family: "Poppins", sans-serif;
-  height: 97vh;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Manrope");
+
+* {
+  box-sizing: border-box;
 }
