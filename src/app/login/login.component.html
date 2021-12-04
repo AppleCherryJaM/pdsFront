@@ -19,6 +19,7 @@
         class="fadeIn second"
         name="login"
         placeholder="login"
+        [(ngModel)]="this.login"
       />
       <input
         type="text"
@@ -26,13 +27,15 @@
         class="fadeIn third"
         name="login"
         placeholder="password"
+        [(ngModel)]="this.password"
       />
-      <input type="submit" class="fadeIn fourth" value="Log In" />
+      <input type="submit" class="fadeIn fourth" value="Log In" (click)="sendLoginForm(login, password)"/>
     </form>
 
     <!-- Remind Password -->
     <div id="formFooter">
       <a class="underlineHover">Forgot Password?</a>
     </div>
+    <p>{{sendLoginForm(login, password)}}</p>
   </div>
 </div>
