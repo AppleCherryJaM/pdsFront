@@ -1,1 +1,76 @@
-<p>teacher-list works!</p>
+<app-navigation-bar></app-navigation-bar>
+<main>
+  <h1>Ваш преподаватель</h1>
+  <div class="content">
+    <div class="teacher-block">
+      <div class="main-content">
+        <img
+          class="avatar mat-elevation-z8"
+          src="https://i.pinimg.com/originals/62/87/36/628736c64a06a86adfb6e1bf9b74efc0.png"
+        />
+        <h2 class="name">Доминик Торетто</h2>
+        <h5 class="raiting-title">Рейтинг</h5>
+        <h5 class="raiting-value">4.0/5.0</h5>
+        <form>
+          <fieldset>
+            <span class="star-cb-group">
+              <input type="radio" id="rating-5" name="rating" value="5" /><label
+                for="rating-5"
+                >5</label
+              >
+              <input
+                type="radio"
+                id="rating-4"
+                name="rating"
+                value="4"
+                checked="checked"
+              /><label for="rating-4">4</label>
+              <input type="radio" id="rating-3" name="rating" value="3" /><label
+                for="rating-3"
+                >3</label
+              >
+              <input type="radio" id="rating-2" name="rating" value="2" /><label
+                for="rating-2"
+                >2</label
+              >
+              <input type="radio" id="rating-1" name="rating" value="1" /><label
+                for="rating-1"
+                >1</label
+              >
+              <input
+                type="radio"
+                id="rating-0"
+                name="rating"
+                value="0"
+                class="star-cb-clear"
+              /><label for="rating-0">0</label>
+            </span>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="info-content">
+        <h4>Информация</h4>
+        <h4>Телефон</h4>
+        <div class="phone-block">
+          <h4>+380639678329</h4>
+          <mat-icon>content_paste</mat-icon>
+        </div>
+        <label for="standard-select">Сменить преподавателя</label>
+        <div class="select">
+          <select id="standard-select">
+            <option value="Option 1">Доминик Торетто</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+            <option value="Option 5">Option 5</option>
+            <option value="Option length">
+              Option that has too long of a value to fit
+            </option>
+          </select>
+          <span class="focus"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
