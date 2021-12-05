@@ -2,9 +2,9 @@
   <div id="formContent">
     <!-- Tabs Titles -->
     <h2 class="active">Sign In</h2>
-    <a (click)="goToSignUpForm()"
-      ><h2 class="inactive underlineHover">Sign Up</h2></a
-    >
+    <a (click)="goToSignUpForm()">
+      <h2 class="inactive underlineHover">Sign Up</h2>
+    </a>
 
     <!-- Icon -->
     <!--    <div class="fadeIn first">-->
@@ -29,13 +29,17 @@
         placeholder="password"
         [(ngModel)]="this.password"
       />
-      <input type="submit" class="fadeIn fourth" value="Log In" (click)="sendLoginForm(login, password)"/>
+      <input
+        type="submit"
+        class="fadeIn fourth"
+        value="Log In"
+        (click)="sendLoginForm(login, password)"
+      />
     </form>
 
     <!-- Remind Password -->
     <div id="formFooter">
       <a class="underlineHover">Forgot Password?</a>
     </div>
-    <p>{{sendLoginForm(login, password)}}</p>
   </div>
 </div>
