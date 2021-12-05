@@ -36,6 +36,7 @@ main h1 {
 
 .info-content {
   width: 70%;
+  padding-left: 24px;
 }
 
 .teacher-block {
@@ -50,11 +51,13 @@ main h1 {
 .phone-block {
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .phone-block > * {
   margin: 0;
   margin-right: 1rem;
+  color: #AFBDD1;
 }
 
 .avatar {
@@ -66,6 +69,7 @@ main h1 {
 
 .name {
   font-size: 20px;
+  color: #AFBDD1;
 }
 
 .raiting-title {
@@ -76,10 +80,29 @@ main h1 {
 
 .raiting-value {
   padding: 0;
-  margin-top: 8px;
+  margin-top: 20px;
   margin-bottom: 0;
   font-size: 48px;
   font-weight: 400;
+}
+
+.info-title {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #AFBDD1;
+}
+
+.phone-title {
+  color: #6D798C;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.change-teacher {
+  color: #AFBDD1;
 }
 
 /* SELECT styles */
@@ -104,6 +127,11 @@ select::-ms-expand {
   display: none;
 }
 
+#standard-select {
+  color: #FFFFFF;
+  text-align-last:center;
+}
+
 .select {
   display: grid;
   grid-template-areas: "select";
@@ -117,8 +145,10 @@ select::-ms-expand {
   font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  background-color: #1E93FF;
+  padding: 12px;
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+  margin-top: 8px;
 }
 .select select,
 .select::after {
@@ -146,19 +176,7 @@ select:focus + .focus {
 
 select[multiple] {
   padding-right: 0;
-  /*
-   * Safari will not reveal an option
-   * unless the select height has room to 
-   * show all of it
-   * Firefox and Chrome allow showing 
-   * a partial option
-   */
   height: 6rem;
-  /* 
-   * Experimental - styling of selected options
-   * in the multiselect
-   * Not supported crossbrowser
-   */
 }
 select[multiple] option {
   white-space: normal;
@@ -188,6 +206,7 @@ fieldset {
   border-radius: 1px;
   padding: 1em 1.5em 0.9em;
   margin: 1em auto;
+  margin-top: 0;
   width: 100%;
   background-color: #2b3648;
 }
@@ -253,6 +272,6 @@ fieldset {
 }
 .star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
   content: "★";
-  color: #e52;
+  color: #FFE604;
   text-shadow: 0 0 1px #333;
 }
